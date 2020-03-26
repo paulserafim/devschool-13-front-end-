@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+
+    </head>
+<bodu>
+    <form>
+        <h1>Personal Information</h1>
+        <p>
+            <label for="fullName"> Please enter your full name</label>
+            <input type = "text" required minlength="2" maxlength="100" placeholder="First and last name">
+        </p>
+
+        <p>
+            <label>Please provide your email address:</label>
+            <input type="email" required>
+        </p>
+
+        <p>
+            <label>Please provide your phone number:</label>
+            <input type="tel" required>
+        </p>
+
+        <p>
+            <label>
+                Please provide your website
+                <input type="url" maxlength="200">
+                <small>(optional)</small>
+            </label>
+        </p>
+
+        <p>
+            <label>Please mention your age:</label>
+            <input type="number" min="18" max="40">
+            <small>(optional)</small>
+        </p>
+
+        <p>
+            <label>Please mention your birthdate:</label>
+            <input type="date" min="2002-01-01" max="2020-03-26">
+            <small>(optional)</small>
+        </p>
+
+        <p>
+            <label>Please choose a fav vegetable:</label>
+            <select>
+                <option>---</option>
+                <option>Broccoli</option>
+                <option>Carrot</option>
+            </select>
+        </p>
+
+        <p>
+            <label>What is your fav fruit?</label>
+            <input type="text" list="list-fruit" pattern="[Bb]anana|[Cc]herry|[Aa]pple">
+            <small>(optional)</small>
+            <datalist id="list-fruit">
+                <option>Banana</option>
+                <option>Apple</option>
+                <option>Cherry</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label>Choose your fav color:</label>
+            <input type="color" value="	#FF0000">
+        </p>
+
+        <p>
+            <label>What is your usual wake-up time?</label>
+            <input type="time">
+            <small>(optional)</small>
+        </p>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</bodu>
+</html>
