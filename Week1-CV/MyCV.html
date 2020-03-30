@@ -1,75 +1,212 @@
 <!DOCTYPE html>
-<head>
-    <title>My CV</title>
-    <meta charset="UTF-8">
-</head>
+    <head>
+        <title>Paul Serban Serafim CV</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is the CV of Paul Serban Serafim, a freshly graduated professional in Computer Science with Business and Management with basic skills in Java, C, C++, Python, Linux Shell Script, Latex, HTML, CSS and JavaScript and intermediate skills in technical writing acquired after almost 2 years of experience in industry.">
+        <meta name="keywords" content="Java, C, C++, Python, Linux Shell Script, Latex, HTML, CSS, JavaScript, Junior Software Developer, IT Consultant, Technical Writer">
+        <meta name="author" content="Paul Serban Serafim">
+        <style>
+            html {
+                height:100%;
+            }
 
-<body>
+            body {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                margin: 10%;
+            }
 
-    <header>
-        <h1>Paul-Serban Serafim</h1>
-        <br>
-    </header>
+            h2, h3 {
+                color:deepskyblue;
+            }
 
-    <p>
+            th, td {
+                text-align: justify;
+                padding: 1%;
+                vertical-align: text-top;
+                min-width: 115px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Paul-Serban Serafim</h1>
+            <hr>
+        </header>
+        
         <h2>Education</h2>
-        <p>
-            <p class="period">September 2015 - June 2019</p>
-            <p class="activity"><em>The University of Manchester, School of Computer Science, Bachelor Computer Science with Business and Management</em>, Upper Second Class with Honours.</p>
-        </p>
-    </p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Period</th>
+                    <th>Degree</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sep-15 Jun-19</td>
+                    <td><em>- The University of Manchester, School of Computer Science, Bachelor Computer Science with Business and Management</em>, Upper Second Class with Honours.</td>
+                </tr>
+            </tbody>
 
-    <p>
+        </table>
+
+
         <h2>Experience</h2>
-        <p>
-            <h3>University experience</h3>
-            <p>
-                <p class="period">2017</p>
-                <p class="activity"><em>Java Spring Web Application</em>, Software Engineering, Second-year project, over 3 months.</p>
-                <p class="activity">Tested, debugged, built, developed and deployed a web application for organising events using Spring as main framework.</p>
-            </p>
-            <p>
-                <p class="period">2016</p>
-                <p class="activity"><em>Stendhal Game</em>Software Engineering, Second-year project, over 3 months.</p>
-                <p class="activity">Tested, debugged, built, developed and deployed a multi-user, multi-threaded, client-server open-source game containing over 6000 Java classes and 1800 test cases using Eclipse, Git, Apache Ant, Jenkins, JUnit, SonarQube. Stendhal is a multiplayer online adventure game with over 10 years of commit history.</p>
-                <p class="activity">Worked on the automation of builds and tests as a team of six people over 12 weeks.</p>
-                </p>
-            </p>
-            <p>
-                <p class="period">2015 - 2016</p>
-                <p class="activity"><em>Web Application Development</em>, First-year project, over 6 months.</p>
-                <p class="activity">Developed a web application that organises deals and auctions for students willing to sell/purchase books along with other 5 teammates.</p>
-                <p class="activity">Learned how to use technologies such as PHP, HTML, CSS, Bootstrap, JavaScript, Twilio API, JQuery, SQL, Github, Apache Server</p>
-                <p class="activity">Tackled ethical frameworks, copyright and accessibility issues when developing the project.</p>
-            </p>
-        </p>
+        <h3>University Experience</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Period</th>
+                    <th>Activities</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Feb-17 May-17</td>
+                    <td><em>- Java Spring Web Application</em>, Software Engineering, Second-year project, over 3 months.<br>- Tested, debugged, built, developed and deployed a web application for organising events using Spring as main framework</td>
+                </tr>
+                <tr>
+                    <td>Oct-16 Dec-16</td>
+                    <td>- <em>Stendhal Game</em>Software Engineering, Second-year project, over 3 months.<br>- Tested, debugged, built, developed and deployed a multi-user, multi-threaded, client-server open-source game containing over 6000 Java classes and 1800 test cases using Eclipse, Git, Apache Ant, Jenkins, JUnit, SonarQube. Stendhal is a multiplayer online adventure game with over 10 years of commit history.<br>- Worked on the automation of builds and tests as a team of six people over 12 weeks.</td>
+                </tr>
+                <tr>
+                    <td>Oct-15 May-16</td>
+                    <td><em>- Web Application Development</em>, First-year project, over 6 months.<br>- Developed a web application that organises deals and auctions for students willing to sell/purchase books along with other 5 teammates.<br>- Learned how to use technologies such as PHP, HTML, CSS, Bootstrap, JavaScript, Twilio API, JQuery, SQL, Github, Apache Server.<br>- Tackled ethical frameworks, copyright and accessibility issues when developing the project.</td>
+                </tr>
+            </tbody>
 
-        <p>
-            <h3>Work experience</h3>
-            <p>
-                <p class="period">July 2016 - September 2016</p>
-                <p class="activity"><em>Java Developer</em>, Internship - Government of Romania, National Agency for Tax Administration</p>
-                <p class="activity">Worked - as part of an Internship programme organised by the Government of Romania - as a Java developer in the IT department of the National Agency of Tax Administration. Throughout this program, I also had the opportunity to take part of organised meetings with government officials to get insights into how diverse government departments and agencies work.</p>
-                <p class="activity">Designed JAVA programs for converting account statements from <em>SQL</em> to <em>XML</em>.</p>
-            </p>
-
-            <p>
-                <p class="period">September 2017 - September 2018</p>
-                <p class="activity"><em>R&D Tax Assistant</em>, Industrial Placement, KPMG UK</p>
-                <p class="activity">Worked in the London office as an IT specialist where I used my technical expertise to write up technical descriptions for R&D eligible projects. These projects were very complex, the majority of them valuing more than £1m in expenditure.</p>
-                <p class="acitivity">Worked with a wide range of clients from global financial services companies to innovative IT startups.</p>
-            </p>
-
-            <p>
-                <p class="period">February 2019 - November 2019</p>
-                <p class="activity"><em>R&D Tax Associate</em>, Contractor, KPMG UK</p>
-                <p class="activity">IT technical writer in a regional office located in Manchester with higher responsibilities: leading technical meetings, reviewing technical documentation, managing teams of up to 5 junior consultants, providing technical and behavioural training to new joiners.</p>
-            </p>
-        </p>
+        </table>
 
 
 
-    </p>
 
-</body>
+
+        <h3>Work Experience</h3>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Period</th>
+                    <th>Activities</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jul-16 Sep-16</td>
+                    <td><em>- Java Developer</em>, Internship - Government of Romania, National Agency for Tax Administration.<br>- Worked - as part of an Internship programme organised by the Government of Romania - as a Java developer in the IT department of the National Agency of Tax Administration. Throughout this program, I also had the opportunity to take part of organised meetings with government officials to get insights into how diverse government departments and agencies work.<br>- Designed JAVA programs for converting account statements from <em>SQL</em> to <em>XML</em>.</td>
+                </tr>
+                <tr>
+                    <td>Sep-17 Sep-18</td>
+                    <td><em>- R&D Tax Assistant</em>, Industrial Placement, KPMG UK.<br>- Worked in the London office as an IT specialist where I used my technical expertise to write up technical descriptions for R&D eligible projects. These projects were very complex, the majority of them valuing more than £1m in expenditure.<br>- Worked with a wide range of clients from global financial services companies to innovative IT startups.</td>
+                </tr>
+                <tr>
+                    <td>Feb-19 Nov-19</td>
+                    <td><em>- R&D Tax Associate</em>, Contractor, KPMG UK.<br>- IT technical writer in a regional office located in Manchester with higher responsibilities: leading technical meetings, reviewing technical documentation, managing teams of up to 5 junior consultants, providing technical and behavioural training to new joiners.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Skills</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>Activities</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><em>Java</em></td>
+                    <td>- 2 years of experience in university acquired as part of the Object-Oriented Program- ming with Java and Software Engineering courses.</td>
+                </tr>
+                <tr>
+                    <td><em>Python</em></td>
+                    <td>- Used for developing a web browser and a chat while learning the basic concepts of Distributed Systems.<br>- Additional skills developed as part of my final year project when using <em>Keras</em> and <em>TensorFlow</em>.</td>
+                </tr>
+                <tr>
+                    <td><em>C</em></td>
+                    <td>- Learned as part of the <em>Algorithms</em> and <em>Imperative Programming</em> course during my second year of university.</td>
+                </tr>
+                <tr>
+                    <td><em>C++</em></td>
+                    <td>- Basic skills developed in High School when I learned about the basic concepts of programming.</td>
+                </tr>
+                <tr>
+                    <td><em>LATEX</em></td>
+                    <td>- Especially used in university to generate PDF technical reports.</td>
+                </tr>
+                <tr>
+                    <td><em>SHELL SCRIPT</em></td>
+                    <td>- 3 years of experience in university while working with Linux to manipulate files and write automatic scripts to test various programs.</td>
+                </tr>
+                <tr>
+                    <td><em>SQL</em></td>
+                    <td>- Acquired during my internship at the National Agency for Fiscal Administration Romania and I enhanced my skills as part of the Databases course.</td>
+                </tr>
+                <tr>
+                    <td><em>Technical writing</em></td>
+                    <td>Mostly acquired as part of my year in industry when I had to write up more than 20 technical documents for a wide range of clients (i.e. from SMEs to large enterprises).</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>References</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dated</th>
+                    <th>References</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sep-16</td>
+                    <td>- Eugen-Dragos Doros (Former President of the National Agency for Tax Administration).</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Foreign Languages</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Level</th>
+                    <th>Language</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Advanced</td>
+                    <td>English (IELTS Certificate)</td>
+                </tr>
+                <tr>
+                    <td>Mothertongue</td>
+                    <td>Romanian</td>
+                </tr>
+                <tr>
+                    <td>Beginner</td>
+                    <td>French</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer>
+            <address>
+                <p>Personal Information</p>
+                <p>Home address: Str. Crangului, nr.15, Vaslui, Romania</p>
+                <p>Phone: <a href="tel:+40748435380">0748 435 380</a></p>
+                <p>Email: <a href="mailto:serafim.paul@gmail.com">serafim.paul@gmail.com</a></p>
+                <p>Website: <a href="https://github.com/paulserafim/devschool-13-front-end-.git">https://github.com/paulserafim/devschool-13-front-end-.git</a></p>
+            </address>
+        </footer>
+
+    </body>
 </html>
