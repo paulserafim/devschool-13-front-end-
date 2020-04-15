@@ -16,7 +16,7 @@ export function append (contact) {
 
 export function del (indexArray) {
     const contacts = read();
-    for (var index = 0; index < indexArray.length; index++)
-        contacts.splice(indexArray[index], 1);
+    indexArray.forEach(element =>
+        contacts.splice(element - (read().length - contacts.length), 1));
     write(contacts);
 }

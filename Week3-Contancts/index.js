@@ -12,10 +12,8 @@ function onLoad() {
 
 function onSubmitAdd(event) {
     event.preventDefault();
-    console.log(event.target);
     const fd = new FormData(event.target);
     const contact = Object.fromEntries(fd);
-    console.log(contact);
     append(contact);
     render();
 }
@@ -24,11 +22,11 @@ function onSubmitAdd(event) {
 function onSubmitDelete(event) {
     event.preventDefault();
 
-    const form = document.getElementsByName("delete");
     var indexArray = [];
-    for(var index = 0; index < form.length; index++)
-        if (form[index].checked)
-            indexArray.push(Array.prototype.indexOf.call(form[index].parentNode.parentNode.children, form[index].parentNode));
+    document.getElementsByName("delete").forEach(element => { 
+        if(element.checked)
+            indexArray.push(Array.prototype.indexOf.call(element.parentNode.parentNode.children, element.parentNode));
+    });
 
     del(indexArray);
     render();
