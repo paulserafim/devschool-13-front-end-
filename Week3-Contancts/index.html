@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<html land = "en">
-    <head>
-        <title>
-            Contact management
-        </title>
-        <meta charset="UTF-8">
-        <script type="module"> //modele ajuta sa implementam un modul. Fiecare fisier care importa sau exporta este modul si trebuie definite cu typeul module. Toate functiile sunt incapsulate in modul, nu sunt globale. Toate functiile care nu au export sunt private.
-            import { init } from './index.js';
-            init();
-        </script>
-    </head>
+<html lang="en">
+  <head>
+    <title>Contact management</title>
+    <meta charset="utf-8" />
+    <script type="module">
+      import { init } from './index.js';
+      init();
+    </script>
+  </head>
 
-    <body>
-        <h1>My contacts</h1>
+  <body>
+    <h1>My contacts</h1>
 
-        <form id="form-add">
-            <input type="text" name="name" id="name" placeholder="Name">
-            <input type="email" name="email" id="email" placeholder="Email">
-            <input type="tel" name="phone" id="phone" placeholder="Phone">
-            <button type="submit">Add</button>
-        </form>
+    <form id="form-add">
+      <input type="text" name="name" id="name" placeholder="Name" required />
+      <input type="email" name="email" id="email" placeholder="E-mail" />
+      <input type="tel" name="phone" id="phone" placeholder="Phone" />
+      <button type="submit">Add</button>
+    </form>
 
-        <form id="form-delete" hidden>
-            <ul id="list"></ul>
-            <button type="submit">Delete selected contacts</button>
-        </form>
-    </body>
+    <form id="form-delete" hidden>
+      <ul id="list"></ul>
+      <button type="submit" name="delete" disabled>Delete selected contacts</button>
+    </form>
+  </body>
 </html>
