@@ -1,0 +1,13 @@
+{
+    "name": "My contacts",
+    "theme_color": "#dddddd",
+    "display": "standalone",
+    "short_name": "My contacts",
+    "background_color": "#f0f0f0",
+    "start_url": "./",
+    "icons": [
+        {
+            
+        }
+    ]
+}

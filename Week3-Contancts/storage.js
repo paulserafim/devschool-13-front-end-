@@ -14,6 +14,15 @@ export function append(contact) {
   write(contacts);
 }
 
+export function edit(contact) {
+  const contacts = read();
+  const index = contacts.findIndex(element => element.id === contact.id);
+  if (index !== -1) {
+    contacts[index] = contact;
+    write(contacts);
+  }
+}
+
 export function remove(contact) {
   const contacts = read();
   const index = contacts.findIndex(element => element.id === contact.id);
@@ -21,4 +30,15 @@ export function remove(contact) {
     contacts.splice(index, 1);
     write(contacts);
   }
+}
+
+export function getContactById (contactId) {
+  const contacts = read();
+  let contact = new Object;
+  contacts.forEach(element => {
+    if(element.id === contactId)
+      contact = element;
+  });
+
+  return contact;
 }
